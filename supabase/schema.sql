@@ -47,11 +47,14 @@ CREATE POLICY "Allow public read access to books" ON public.books
 CREATE POLICY "Allow admin write access to books" ON public.books
     FOR ALL TO authenticated USING (true) WITH CHECK (true);
 
--- Messages: Anyone can insert, only authenticated admin can read/edit
+-- Messages: Anyone can insert, anyone can read (for admin panel with anon key)
 CREATE POLICY "Allow public inserts to messages" ON public.messages
     FOR INSERT WITH CHECK (true);
 
-CREATE POLICY "Allow admin access to messages" ON public.messages
+CREATE POLICY "Allow public read access to messages" ON public.messages
+    FOR SELECT USING (true);
+
+CREATE POLICY "Allow admin full access to messages" ON public.messages
     FOR ALL TO authenticated USING (true) WITH CHECK (true);
 
 -- Purchases: Anyone can insert (to initiate purchase), select check by order_id or email, admin has full access
