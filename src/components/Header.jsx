@@ -32,7 +32,7 @@ export default function Header() {
     <header className={`navbar ${isScrolled ? 'scrolled' : ''} ${isMobileMenuOpen ? 'mobile-active' : ''}`}>
       <Link to="/" className="nav-logo">
         <BookOpen size={28} color="#00f2fe" style={{ filter: 'drop-shadow(0 0 8px rgba(0, 242, 254, 0.6))' }} />
-        <span>Writes</span>
+        <span>thek_writes</span>
       </Link>
 
       <nav className="nav-links">

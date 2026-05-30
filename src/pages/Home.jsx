@@ -12,12 +12,12 @@ export default function Home() {
           <span>Discover the Magic of Stories</span>
         </div>
         
-        <h1 className="hero-magic">M.A.G.I.C</h1>
+        <h1 className="hero-magic" style={{ fontSize: '28px', fontWeight: '500' }}>thek_writes</h1>
         
         <p className="hero-tagline">
-          They say that there is a Magic in My Stories.
+          Where imagination weaves enchanting tales and dreams take flight through the power of words.
           <br /><br />
-          Feel free to see that Magic... If you like my stories, then don't forget to share this website with your friends.
+          Step into a realm where every story holds a touch of magic, waiting to captivate your heart and spark your wonder.
         </p>
 
         <div style={{ display: 'flex', gap: '16px', marginTop: '12px' }}>
@@ -46,7 +46,7 @@ export default function Home() {
       <div className="hero-image-wrapper">
         <img 
           src={writesCover} 
-          alt="Writes Cover" 
+          alt="thek_writes Cover" 
           className="hero-image" 
         />
       </div>

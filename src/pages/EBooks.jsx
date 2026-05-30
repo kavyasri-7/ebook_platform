@@ -78,14 +78,14 @@ export default function EBooks() {
       key: razorpayKeyId,
       amount: Math.round(book.price * 100), // Razorpay expects amount in paise
       currency: 'INR',
-      name: 'Writes',
+      name: 'thek_writes',
       description: `E-Book: ${book.title}`,
       image: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=150', // quick circular preview
       prefill: {
         email: email,
       },
       theme: {
-        color: '#8f43ff', // Writes main theme color
+        color: '#8f43ff', // thek_writes main theme color
       },
       handler: async function (response) {
         try {

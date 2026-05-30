@@ -193,7 +193,7 @@ export default function Contact() {
       <div className="hero-image-wrapper" style={{ alignSelf: 'start', position: 'sticky', top: '120px' }}>
         <img 
           src={writesCover} 
-          alt="Writes Cover" 
+          alt="thek_writes Cover" 
           className="hero-image" 
         />
       </div>

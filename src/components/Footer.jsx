@@ -15,7 +15,7 @@ export default function Footer() {
           <Link to="/contact" className="footer-link">Contact Us</Link>
         </div>
         <p className="footer-copy">
-          © {currentYear} WRITES | <a href="#terms" className="footer-link">Terms</a> | <a href="#privacy" className="footer-link">Privacy</a> | <a href="#refund" className="footer-link">Refund Policy</a>
+          © {currentYear} thek_writes | <a href="#terms" className="footer-link">Terms</a> | <a href="#privacy" className="footer-link">Privacy</a> | <a href="#refund" className="footer-link">Refund Policy</a>
         </p>
       </div>
     </footer>
